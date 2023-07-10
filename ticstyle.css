@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(249, 245, 241);
+}
+.navbar{
+    background-color: black;
+    color: white;
+    height: 45px;
+    padding-top: 15px;
+}
+.navbar h2{
+    background-color: black;
+}
+.gamecontainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.boxes{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+.mainbox{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.spbox{
+    padding-left: 30px;
+}
+.mainbox:hover{
+    background-color: rgb(213, 249, 249);
+}
+.b-right{
+    border-right: 0;
+}
+
+.b-left{
+    border-left: 0;
+}
+
+.b-top{
+    border-top: 0;
+}
+
+.b-bottom{
+    border-bottom: 0;
+}
+
+#wlcmtxt{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin-left: 40px;
+}
+.turntext{
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 25px;
+    display: inline;
+    
+}
+.line{
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: aquamarine;
+    transition: width 1s ease-in-out;
+}
+#reset{
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 6rem;
+    border-radius: 3rem;
+    border: none;
+    background-color: aquamarine;
+    font-size: 20px;
+    transition: .2s ease-in-out;
+}
+#reset:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 950px)
+{
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    .otherinfo{
+        margin-top: 34px;
+    }
+    .otherinfo h2{
+        font-size: 1.5rem;
+    }
+    .boxes { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
